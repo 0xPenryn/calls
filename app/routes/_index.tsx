@@ -29,7 +29,6 @@ export default function Index() {
 
 	return (
 		<div className="flex flex-col items-center justify-center h-full p-4 mx-auto">
-			<div className="flex-1"></div>
 			<div className="space-y-6">
 				<div>
 					<h1 className="text-3xl font-bold">Call Penryn</h1>
