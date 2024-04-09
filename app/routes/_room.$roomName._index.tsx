@@ -7,7 +7,6 @@ import { AudioIndicator } from '~/components/AudioIndicator'
 import { Button } from '~/components/Button'
 import { CameraButton } from '~/components/CameraButton'
 import { CopyButton } from '~/components/CopyButton'
-import { Disclaimer } from '~/components/Disclaimer'
 import { Icon } from '~/components/Icon/Icon'
 import { MicButton } from '~/components/MicButton'
 
@@ -120,9 +119,6 @@ export default function Lobby() {
 					<SettingsButton />
 					<CopyButton></CopyButton>
 				</div>
-			</div>
-			<div className="flex flex-col justify-end flex-1">
-				<Disclaimer className="pt-6" />
 			</div>
 		</div>
 	)

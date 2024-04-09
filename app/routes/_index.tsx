@@ -3,7 +3,6 @@ import { json, redirect } from '@remix-run/cloudflare'
 import { Form, useLoaderData } from '@remix-run/react'
 import invariant from 'tiny-invariant'
 import { Button, ButtonLink } from '~/components/Button'
-import { Disclaimer } from '~/components/Disclaimer'
 import { Input } from '~/components/Input'
 import { Label } from '~/components/Label'
 import { useUserMetadata } from '~/hooks/useUserMetadata'
@@ -33,10 +32,10 @@ export default function Index() {
 			<div className="flex-1"></div>
 			<div className="space-y-6">
 				<div>
-					<h1 className="text-3xl font-bold">🍊 Orange Meets</h1>
+					<h1 className="text-3xl font-bold">Call Penryn</h1>
 					<div className="flex items-center justify-between gap-3">
 						<p className="text-sm text-zinc-500 dark:text-zinc-400">
-							Logged in as {data?.displayName}
+							Your Name: {data?.displayName}
 						</p>
 						{!usedAccess && (
 							<a
@@ -67,9 +66,6 @@ export default function Index() {
 						</Button>
 					</Form>
 				</details>
-			</div>
-			<div className="flex flex-col justify-end flex-1">
-				<Disclaimer className="pt-6" />
 			</div>
 		</div>
 	)

@@ -159,7 +159,7 @@ export class ChatRoom {
 	) {
 		// Accept our end of the WebSocket. This tells the runtime that we'll be terminating the
 		// WebSocket in JavaScript, not sending it elsewhere.
-		;(webSocket as any).accept()
+		(webSocket as any).accept()
 
 		// Set up our rate limiter client.
 		// let limiterId = this.env.limiters.idFromName(ip)
